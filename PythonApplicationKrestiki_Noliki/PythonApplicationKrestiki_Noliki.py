@@ -17,6 +17,7 @@ hh=1
 newn=7
 nn=8
 jj=11
+yyy=11
 def vuvod_stroka(setk_,k): 
     stroka='|'
     for i in range(k,k+setk_):
