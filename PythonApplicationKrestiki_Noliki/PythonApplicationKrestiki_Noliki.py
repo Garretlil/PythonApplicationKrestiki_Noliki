@@ -8,7 +8,8 @@ def vvod_XO(bukva_,n):
        array[x-1]=bukva_
 
 
-
+p=13
+o=17
 def vuvod_stroka(setk_,k): 
     stroka='|'
     for i in range(k,k+setk_):
