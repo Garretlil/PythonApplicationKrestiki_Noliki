@@ -7,17 +7,6 @@ def vvod_XO(bukva_,n):
     else:
        array[x-1]=bukva_
 
-
-p=13
-o=17
-q=1
-d=9
-pp=1
-hh=1
-newn=7
-nn=8
-jj=11
-yyy=11
 def vuvod_stroka(setk_,k): 
     stroka='|'
     for i in range(k,k+setk_):
@@ -25,12 +14,6 @@ def vuvod_stroka(setk_,k):
         
         stroka+='|'
     return stroka
-
-
-
-         
-    
-
 
 def ToConsoleArray(setk):
     
@@ -45,11 +28,6 @@ def win(win_combinations):
         if win_combinations[i]!=win_combinations[i+1]:
             return False
     return True
-
-
-
-
-
 
 def predwin(n):
     k=0
