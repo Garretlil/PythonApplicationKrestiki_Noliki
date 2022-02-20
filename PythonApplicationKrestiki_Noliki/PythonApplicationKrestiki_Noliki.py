@@ -23,12 +23,12 @@ def vuvod_stroka(setka_,k):
         stroka+='|'
     return stroka
 
-def ToConsoleArray(setk):    
+def ToConsoleArray(setka_):    
     t=0
-    for i in range(setk):
+    for i in range(setka_):
         stroka=vuvod_stroka(setk,t)
         print(stroka)
-        t+=setk
+        t+=setka_
 
 def askwin(win_combinations):   
     for i in range(len(win_combinations)-1):
