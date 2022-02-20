@@ -16,6 +16,7 @@ def ResearchOfSize(current_element,maxlensymbol_):
 
 f=1
 
+f=5
 
 def vuvod_stroka(setka_,k): 
     stroka='|'
