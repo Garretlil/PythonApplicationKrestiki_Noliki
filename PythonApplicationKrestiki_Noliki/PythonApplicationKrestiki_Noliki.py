@@ -76,7 +76,6 @@ for i in range(1,setka**2+1):
     array.append(i)
 ToConsoleArray(setka)
 CheiHod=False
-SetValue=""
 words = ("X", "O")
 while True:
     vvod_XO(words[int(CheiHod)],setka)
