@@ -1,3 +1,5 @@
+setka=int(input('введи размер желаемого поля'))
+fulldlina=len(str(setka**2))
 
 def vvod_XO(bukva_,n):
     x=int(input('куда поставить' + ' '+ bukva_ +'?'))
@@ -7,11 +9,19 @@ def vvod_XO(bukva_,n):
     else:
        array[x-1]=bukva_
 
+def ResearchOfSize(current_element):
+    global fulldlina
+    dlina=len(str(current_element))
+    return fulldlina-dlina
+
+
+
+
 def vuvod_stroka(setk_,k): 
     stroka='|'
     for i in range(k,k+setk_):
         stroka+=str(array[i])
-        
+        stroka+=' '*ResearchOfSize(array[i])
         stroka+='|'
     return stroka
 
@@ -61,8 +71,6 @@ def predwin(n):
         
     return False
 
-
-setka=int(input('введи размер желаемого поля'))
 array=[]
 for i in range(1,setka**2+1):
     array.append(i)
