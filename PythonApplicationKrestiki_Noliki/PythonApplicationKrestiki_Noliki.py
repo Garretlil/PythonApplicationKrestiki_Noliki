@@ -75,17 +75,12 @@ array=[]
 for i in range(1,setka**2+1):
     array.append(i)
 ToConsoleArray(setka)
-CheiHod=True
+CheiHod=False
 SetValue=""
-
+words = ("X", "O")
 while True:
-    if CheiHod:
-        SetValue="X"  
-    else:
-        SetValue="O" 
-    CheiHod= not CheiHod    
-    vvod_XO(SetValue,setka)
- 
+    vvod_XO(words[int(CheiHod)],setka)
+    CheiHod =not CheiHod 
     ToConsoleArray(setka)    
     if win(setka):
        print('Win!')
