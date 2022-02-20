@@ -1,6 +1,5 @@
 setka=int(input('введи размер желаемого поля: '))
 
-
 def vvod_XO(bukva_,n):
     x=int(input('куда поставить' + ' '+ bukva_ +'?'))
     if not(x<=n**2 and x>0):
