@@ -26,7 +26,7 @@ def vuvod_stroka(setka_,k):
 def ToConsoleArray(setka_):    
     t=0
     for i in range(setka_):
-        stroka=vuvod_stroka(setk,t)
+        stroka=vuvod_stroka(setka_,t)
         print(stroka)
         t+=setka_
 
