@@ -54,7 +54,7 @@ def win(n):
     mass.clear
         # проверка по столбцам
     for i in range(n):        
-        for s in range(i,i+n(n-1)+1,n):
+        for s in range(i,i+n*(n-1)+1,n):
             mass.append(array[s])
         if askwin(mass):
             return True
