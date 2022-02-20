@@ -14,7 +14,7 @@ def ResearchOfSize(current_element,maxlensymbol_):
     dlina=len(str(current_element))
     return maxlensymbol_-dlina
 
-f=1
+f=66
 
 f=5
 
