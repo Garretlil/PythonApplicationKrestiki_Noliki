@@ -9,8 +9,7 @@ def vvod_XO(bukva_,n):
     else:
        array[x-1]=bukva_
 
-def ResearchOfSize(current_element,maxlensymbol_):
-    
+def ResearchOfSize(current_element,maxlensymbol_):    
     dlina=len(str(current_element))
     return maxlensymbol_-dlina
 
@@ -24,8 +23,7 @@ def vuvod_stroka(setka_,k):
         stroka+='|'
     return stroka
 
-def ToConsoleArray(setk):
-    
+def ToConsoleArray(setk):    
     t=0
     for i in range(setk):
         stroka=vuvod_stroka(setk,t)
@@ -77,15 +75,17 @@ array=[]
 for i in range(1,setka**2+1):
     array.append(i)
 ToConsoleArray(setka)
-count=0
+CheiHod=True
 SetValue=""
+
 while True:
-    if count%2==0:
+    if CheiHod:
         SetValue="X"  
     else:
-        SetValue="O"  
+        SetValue="O" 
+    CheiHod= not CheiHod    
     vvod_XO(SetValue,setka)
-    count+=1
+ 
     ToConsoleArray(setka)    
     if win(setka):
        print('Win!')
