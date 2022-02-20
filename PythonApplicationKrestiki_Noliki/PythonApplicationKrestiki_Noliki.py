@@ -14,9 +14,6 @@ def ResearchOfSize(current_element,maxlensymbol_):
     dlina=len(str(current_element))
     return maxlensymbol_-dlina
 
-f=77
-
-f=5
 
 def vuvod_stroka(setka_,k): 
     stroka='|'
