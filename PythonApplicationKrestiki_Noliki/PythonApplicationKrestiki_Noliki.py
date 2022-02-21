@@ -102,11 +102,9 @@ arraysteps=[]
 for i in range(1,setka**2+1):
     arraysetka.append(i)
 ToConsoleArray(setka)
-CheiHod=False
 words = ("X", "O")
 while True:
     vvod_XO(GetSymbol(),setka)
-    CheiHod =not CheiHod 
     ToConsoleArray(setka)    
     if win(setka):
        print('Win!')
