@@ -1,12 +1,16 @@
 setka=int(input('введи размер желаемого поля: '))
-
+def proverka_na_mesto(x):#x - место, которое проверяется
+    return x in arraysetka
+     
 def vvod_XO(bukva_,n):
-    x=int(input('куда поставить' + ' '+ bukva_ +'?'))
-    if not(x<=n**2 and x>0):
-       print('введи адекватное число')
+    x=int(input('куда поставить' + ' '+ bukva_ +'? '))
+
+    if not(x<=n**2 and x>0 and proverka_na_mesto(x) ):
+       print('введи допустимое значение')
        vvod_XO(bukva_,n)       
-    else:
+    else:      
        arraysetka[x-1]=bukva_
+        
 
 def ResearchOfSize(current_element,maxlensymbol_):    
     dlina=len(str(current_element))
@@ -47,22 +51,23 @@ def win(n):
         else:
             k+=n
 
-    mass.clear
+    mass.clear()
         # проверка по столбцам
-    for i in range(n):        
+    for i in range(n):  
+        mass.clear()
         for s in range(i,i+n*(n-1)+1,n):
             mass.append(arraysetka[s])
         if askwin(mass):
             return True
 
-    mass.clear
+    mass.clear()
      # проверка по диагоналям
     for i in range(0,n**2,n+1):
         mass.append(arraysetka[i])
     if askwin(mass):
             return True
 
-    mass.clear
+    mass.clear()
     for i in range(n-1,n**2-n+1,n-1):
         mass.append(arraysetka[i])
     if askwin(mass):
