@@ -1,15 +1,22 @@
 print ("Возврат хода - буква R")
 setka=int(input('введи размер желаемого поля: '))
- 
+
+def is_integer(s):
+    try:
+        int(s)
+        return True
+    except ValueError:
+        return False 
      
 def vvod_XO(bukva_,n):
     x=input('следующий ход игрока' + ' '+ bukva_ +', выберите номер: ')
+
     if x.upper()=='R' :
         if  len(arraysteps)!=0:
             stepp=arraysteps[len(arraysteps)-1]# последний ход
             arraysetka[stepp-1]=stepp
             arraysteps.pop(len(arraysteps)-1)
-    else:
+    if is_integer(x) :
         x=int(x)
         try:
             if not(x<=n**2 and x>0 ):
